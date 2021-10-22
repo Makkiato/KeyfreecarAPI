@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchAndRemote">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/Search"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start search device"/>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="5">
+            <LinearLayout
+                android:id="@+id/SelectScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ConnectLayout"
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/connect"
+                android:text="Connect"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/disconnect"
+                android:layout_margin="3dp"
+                android:text="Disconnect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/lock"
+                android:text="Lock"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/unlock"
+                android:text="Unlock"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/changeName"
+                android:text="Change Name"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/changePassword"
+                android:text="Change Password"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/engineStart"
+                android:text="Start Engine"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/engineStop"
+                android:text="Stop Engine"
+                android:layout_margin="3dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
